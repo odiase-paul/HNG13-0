@@ -21,3 +21,8 @@ This project is designed to meet the Frontend Wizards Stage 0 task requirements.
 ## ⚙️ How to Run Locally
 
 1. **Clone this repository**
+
+- '''bash''' > git clone https://github.com/odiase-paul/HNG13-0.git
+
+- cd hng13-0
+- copy the index.html path and open it in your browser
