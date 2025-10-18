@@ -1,0 +1,178 @@
+body {
+  background: #000;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-card {
+  background: #26235c;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.top-title h1 {
+  text-align: center;
+  font-family: "Clash display", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+figure.figure-div {
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-image-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.profile-image {
+  position: relative;
+  border-radius: 100%;
+  padding: 5px;
+  z-index: 0;
+  width: 120px;
+  height: 120px;
+}
+.profile-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(40deg, red, gold);
+  z-index: -1;
+  pointer-events: none;
+}
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+header h2,
+p {
+  margin: 0;
+  text-align: center;
+  text-wrap-style: balance;
+  font-size: 1.175rem;
+}
+header h2 {
+  font-size: 1.8rem;
+}
+.figure-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.figure-text-div .time {
+  border: 1px solid goldenrod;
+  padding: 5px 10px;
+  background: #16174d;
+  border-radius: 4px;
+  width: fit-content;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  font-size: 1.175rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid goldenrod;
+  padding: 15px 8px;
+  border-radius: 5px;
+  background: #16174d;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  margin-top: 0.25rem;
+  display: block;
+  width: 65%;
+  font-size: 0.8rem;
+  font-family: "Nunito", sans-serif;
+}
+h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 600px) {
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*tablet screen */
+@media (min-width: 768px) {
+  .profile-card {
+    max-width: 70%;
+    padding: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  figure.figure-div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .figure-text-div {
+    align-items: start;
+  }
+  p {
+    text-align: left;
+  }
+  ul {
+    justify-content: space-around;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+  }
+  input[type="file"] {
+    margin-top: 0.25rem;
+    display: block;
+    width: 65%;
+    font-size: 0.7rem;
+    font-family: "Nunito", sans-serif;
+  }
+
+  input[type="file"] {
+    width: 100%;
+  }
+}
