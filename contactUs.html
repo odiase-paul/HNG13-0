@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contactUs.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main data-testid="test-contact-page" aria-label="Contact Us page">
+      <header>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Please fill out the form below.</p>
+      </header>
+
+      <form id="contact-form" novalidate aria-labelledby="contact-title">
+        <section aria-labelledby="contact-title">
+          <h2 id="contact-title">Get in Touch</h2>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+              data-testid="test-contact-name"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+              data-testid="test-contact-email"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Type your message here..."
+              data-testid="test-contact-message"
+            ></textarea>
+            <span class="error errorMessage" aria-live="polite"></span>
+          </div>
+
+          <button
+            type="submit"
+            data-testid="test-contact-submit"
+            aria-label="Submit contact form"
+          >
+            Send Message
+          </button>
+        </section>
+
+        <p
+          id="success-message"
+          class="success"
+          data-testid="test-contact-success"
+          hidden
+        >
+          Your message has been sent successfully✅
+        </p>
+      </form>
+    </main>
+
+    <script src="contactUs.js"></script>
+  </body>
+</html>
