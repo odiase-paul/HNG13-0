@@ -48,7 +48,7 @@ textarea {
   font-size: 1rem;
   padding: 0.7rem;
   border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   font-family: "Nunito", sans-serif;
   transition: border-color 0.3s;
 }
@@ -57,7 +57,7 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  border-color: #007acc;
+  border-color: goldenrod;
   outline: none;
 }
 
@@ -83,6 +83,9 @@ button:focus {
   font-size: 0.9rem;
   height: 1rem;
   margin-top: 0.2rem;
+}
+.errorMessage {
+  margin-bottom: 1rem;
 }
 
 .success {

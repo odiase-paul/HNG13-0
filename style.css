@@ -88,7 +88,7 @@ ul li a {
 li {
   font-size: 1.175rem;
 }
-ul {
+.page-body ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -128,8 +128,26 @@ h3 {
   font-size: 1.3rem;
 }
 
+/* nav bar */
+.navbar {
+  width: fit-content;
+  margin: 0 auto;
+  background: #16174d;
+}
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+.navbar ul a {
+  font-weight: 600;
+}
+
 @media (min-width: 600px) {
-  ul {
+  .page-body ul {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -157,7 +175,7 @@ h3 {
   p {
     text-align: left;
   }
-  ul {
+  .page-body ul {
     justify-content: space-around;
   }
 
