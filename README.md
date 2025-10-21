@@ -57,9 +57,9 @@ This project is designed to meet the Frontend Wizards Stage 0 task requirements.
 
 # Structure
 
-- Wrapped with <main data-testid="test-about-page">.
+- Wrapped with `<main data-testid="test-about-page">`
 - Each section is contained in a <section> tag.
-- Proper headings used (<h1>, <h2>) for clarity and accessibility.
+- Proper headings used `(<h1>, <h2>)` for clarity and accessibility.
 - Fully responsive layout for mobile, tablet, and desktop screens.
 
 ## Tech Stack
